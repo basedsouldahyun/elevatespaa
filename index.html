@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>リラクゼーションスパ</title>
+  <meta name="description" content="癒しの空間で心と体をリフレッシュするリラクゼーションスパ。" />
+  <meta name="keywords" content="スパ, マッサージ, アロマ, リラクゼーション" />
+  <meta name="author" content="Relaxation Spa" />
+  <meta property="og:title" content="リラクゼーションスパ" />
+  <meta property="og:description" content="癒しと安らぎのスパ体験をご提供します。" />
+  <meta property="og:type" content="website" />
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Sawarabi Mincho', sans-serif;
+      background-color: #e0eddc;
+      color: #2c4a2b;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #e0eddc;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #2c4a2b;
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    .wrapper {
+      display: flex;
+      padding: 40px;
+      gap: 40px;
+    }
+
+    .left-image {
+      flex: 1;
+    }
+
+    .left-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    .right-content {
+      flex: 1.2;
+      background-color: #f4f9ee;
+      padding: 30px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .right-content h1 {
+      font-size: 26px;
+      margin-bottom: 12px;
+      color: #2c4a2b;
+    }
+
+    .right-content p {
+      line-height: 1.7;
+      font-size: 15px;
+      margin-bottom: 25px;
+    }
+
+    .menu {
+      margin-bottom: 25px;
+    }
+
+    .menu h2 {
+      font-size: 20px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #c5dabf;
+      padding-bottom: 4px;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+
+    .gallery {
+      display: flex;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .gallery img {
+      width: 50%;
+      border-radius: 10px;
+    }
+
+    .gallery > div {
+      flex: 1;
+    }
+
+    .contact h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .contact p {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .contact a {
+      text-decoration: none;
+      color: #2c4a2b;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #476f3d;
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+      border-radius: 10px;
+      font-size: 14px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media screen and (max-width: 768px) {
+      .wrapper {
+        flex-direction: column;
+        padding: 20px;
+      }
+    } 
+  /* SERVICE SECTION */
+#service {
+  background: #f6fef9;
+}
+
+#service h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2e604f;
+}
+
+#service p {
+  color: #4b5563;
+}
+
+/* Item card styling */
+#service .flex {
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#service .flex:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon image */
+#service img {
+  background-color: #ecfdf5;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Text content */
+#service h3 {
+  color: #1f2937;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+#service .text-sm {
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+  .address-section {
+  background-color: #f3f8f3;
+  padding: 2rem;
+  text-align: center;
+  color: #2e4f3e;
+  font-family: 'Poppins', sans-serif;
+  border-top: 2px solid #c9e4c5;
+  margin-top: 4rem;
+}
+
+.address-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2e4f3e;
+}
+
+.address-section p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+.about-section {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #2e4f3e;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-container {
+  max-width: 700px;
+  margin: 0 auto;
+  border-left: 4px solid #a4d4ae;
+  padding-left: 1.5rem;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4a775b;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #3b4d3a;
+}
+/* Navbar Styling */
+.navbar {
+  background-color: #f6fff8;
+  color: #2e4f3e;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 25px;
+
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #3b4d3a;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #6bbf74;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+</style>
+</head>
+<body>
+  <header id="beranda">
+  <nav class="navbar">
+    <div    class="logo">🌿 Elevate Spa</div>
+    <ul class="nav-links">
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#services">Layanan</a></li>
+      <li><a href="#adress">Alamat</a></li>
+      <li><a href="#carapesan">Cara Pesan</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <div class="wrapper">
+    <div class="left-image">
+      <img src="WhatsApp Image 2025-07-18 at 17.37.08_49023f9a.jpg" alt="リラクゼーションマッサージ">
+    </div>
+
+    <div class="right-content">
+      <h1>Elevate Spa</h1>
+      <p>
+        Here For You<br>
+        Anytime<br>
+        Lesserafim.
+      </p>
+
+      <div class="menu">
+        <h2>Best Seller</h2>
+        <div class="menu-item"><h3>Balinese Massage</h3> <h3> Rp. 130.000 - Rp. 170.000 </h3></div>
+        <div class="menu-item"><h3>Back Massage</h3><h3> Rp. 80.000 - Rp. 120.000 </h3></div> 
+        <div class="menu-item"><h3>Feet Massage</h3><h3> Rp. 60.000 - Rp.100.000 </h3></div>
+      </div>
+
+      <div class="gallery">
+        <div><img src="WhatsApp Image 2025-07-14 at 14.11.17_2a924a02.jpg" alt="spa towel"></div>
+        <div><img src="WhatsApp Image 2025-07-14 at 14.11.18_82be9efc.jpg" alt="candles and oil"></div>
+      </div>
+
+      <div class="contact">
+        <h3>Order Info</h3>
+        <p>
+          <br>
+          081237011393
+          <br>
+         Jl. Drupadi No.188-12, Seminyak, Kec. Kuta, Kabupaten Badung, Bali 80361<br>
+        </p>
+        <a href="#carapesan" class="button">Order</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="services" style="background-color: #edf5ee; padding: 40px;">
+  <h2 style="text-align:center; font-size: 24px; margin-bottom: 30px; color: #2c4a2b;">Reccomended Services</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+    
+    <div style="flex: 1 1 220px; background: #ffffff; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: center;">
+      <img src="https://img.icons8.com/ios-filled/50/4caf50/massage.png" alt="Facial" style="width: 50px; height: 50px; margin-bottom: 10px;" />
+      <h3 style="font-size: 18px; margin-bottom: 8px;">Balinese Massage</h3>
+           <p style="font-size: 14px; color: #4b5563;">
+
+  Adalah teknik pijat tradisional dari Bali yang menggabungkan pijatan lembut, tekanan titik akupresur, dan aromaterapi untuk meredakan ketegangan otot, meningkatkan sirkulasi darah, serta membawa ketenangan pikiran dan tubuh.
+</p>
+    </div>
+
+    <div style="flex: 1 1 220px; background: #f4fbf5; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: center;">
+      <img src="https://img.icons8.com/ios-filled/50/4caf50/massage.png" alt="Body Massage" style="width: 50px; height: 50px; margin-bottom: 10px;" />
+      <h3 style="font-size: 18px; margin-bottom: 8px;">Thai Massage</h3>
+      <p style="font-size: 14px; color: #4b5563;">Adalah teknik pijat tradisional Thailand yang menggabungkan peregangan pasif, tekanan titik, dan teknik tubuh penuh untuk meningkatkan fleksibilitas, energi, dan keseimbangan tubuh.
+</p>
+    </div>
+
+    <div style="flex: 1 1 220px; background: #ffffff; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: center;">
+      <img src="https://img.icons8.com/ios-filled/50/4caf50/massage.png" alt="Back Massage" style="width: 50px; height: 50px; margin-bottom: 10px;" />
+      <h3 style="font-size: 18px; margin-bottom: 8px;">Siatzu Massage</h3>
+      <p style="font-size: 14px; color: #4b5563;">Adalah teknik pijat asal Jepang yang menggunakan tekanan jari pada titik-titik tertentu di tubuh untuk merangsang aliran energi, meredakan stres, dan memulihkan keseimbangan tubuh.
+</p>
+    </div>
+
+    <div style="flex: 1 1 220px; background: #f4fbf5; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: center;">
+      <img src="https://img.icons8.com/ios-filled/50/4caf50/massage.png" alt="Foot Massage" style="width: 50px; height: 50px; margin-bottom: 10px;" />
+      <h3 style="font-size: 18px; margin-bottom: 8px;">Forehead Massage</h3>
+      <p style="font-size: 14px; color: #4b5563;">Adalah pijatan lembut pada area dahi yang membantu meredakan ketegangan, mengurangi stres, dan memberikan rasa rileks serta kesegaran pada pikiran.
+</p>
+    </div>
+<div style="flex: 1 1 220px; background: #f4fbf5; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); text-align: center;">
+      <img src="https://img.icons8.com/ios-filled/50/4caf50/massage.png" alt="Foot Massage" style="width: 50px; height: 50px; margin-bottom: 10px;" />
+      <h3 style="font-size: 18px; margin-bottom: 8px;">Foot Soothing</h3>
+      <p style="font-size: 14px; color: #4b5563;">Adalah pijatan pada telapak dan punggung kaki yang merangsang titik-titik refleksi untuk meningkatkan sirkulasi, meredakan kelelahan, dan memberikan efek relaksasi menyeluruh pada tubuh.
+</p>
+    </div>
+<section class="py-12 px-4">
+  <div class="max-w-4xl mx-auto text-center mb-10">
+    <h2 class="text-3xl font-bold text-green-800">🌿 Spa & Beauty Services</h2> <br>
+    <p class="text-gray-600">Explore our curated treatments designed for ultimate relaxation and beauty.</p> <br>
+  </div>  <!-- Massage Services -->  <div class="mb-8">
+    <h2 class="text-xl font-semibold text-green-700 mb-4">🌿 Massage Services</h2> <br>
+    <ul class="grid gap-4">
+      <li class="bg-white p-4 rounded-2xl shadow">
+        <section class="px-4 py-8 bg-white text-green-900">
+  <h2 class="text-2xl font-bold mb-4">Facial Treatment</h2> <br>  <h4 class="font-semibold text-lg mt-6 mb-2">FACIAL + MASSAGE</h4> <br>
+  <ul class="list-disc ml-6">
+    <li>Face Only (Woman 45k / Man 50k)</li> <br>
+    <li>Face + Neck + Shoulder (Woman 65k / Man 70k)</li> <br>
+  </ul>  <h4 class="font-semibold text-lg mt-6 mb-2">MODERN FACIAL</h4> 
+  <ul class="list-disc ml-6"> <br>
+    <li>Normal Facial - Woman 65k / Man 70k</li> <br>
+    <li>Whitening Facial - Woman 70k / Man 75k</li> <br>
+    <li>Gold Facial - Woman 70k / Man 75k</li> <br>
+    <li>Anti Acne Facial - Woman 75k / Man 80k</li> <br>
+    <li>Anti Aging Facial - Woman 75k / Man 80k</li> <br>
+    <li>Facial Mask Only - Woman 45k / Man 50k</li> <br>
+  </ul>  <h4 class="font-semibold text-lg mt-6 mb-2">TRADITIONAL FACIAL</h4>
+  <ul class="list-disc ml-6"> <br>
+    <li>Face Only - Woman 45k / Man 50k</li> <br>
+    <li>Face + Neck - Woman 60k / Man 65k</li> <br>
+    <li>Face + Neck + Shoulder - Woman 65k / Man 70k</li> <br>
+  </ul>  <h4 class="font-semibold text-lg mt-6 mb-2">TOTOK</h4> 
+  <ul class="list-disc ml-6"> <br>
+    <li>Totok Wajah - Woman 45k / Man 50k</li> <br>
+    <li>Totok Perut - Woman 45k / Man 50k</li> <br>
+    <li>Totok Payudara - Woman 45k</li> <br>
+    <li>Totok Kepala - Woman 45k / Man 50k</li> <br>
+    <li>Totok Punggung - Woman 45k / Man 50k</li> <br>
+  </ul>
+ <section class="px-4 py-8 bg-white text-green-900">
+  <h2 class="text-2xl font-bold mb-4">· Body Treatment</h2> <br>  <h4 class="font-semibold text-lg mt-6 mb-2">Paket Lulur & Masker</h4> <br>
+  <ul class="list-disc ml-6">
+    <li>Lulur + Masker Badan - 60 mins - Rp. 150.000</li> <br>
+    <li>Lulur Mandi Susu - 60 mins - Rp. 150.000</li> <br>
+    <li>Lulur Rempah - 60 mins - Rp. 150.000</li> <br>
+    <li>Lulur Bengkoang - 60 mins - Rp. 150.000</li> <br>
+  </ul>  <h4 class="font-semibold text-lg mt-6 mb-2">Tropical Sunburn (Coconut, Gold, Chocolate)</h4> <br>
+  <ul class="list-disc ml-6">
+    <li>Full Body Massage + Gel - 90 mins - Rp. 260.000</li> <br>
+  </ul>  <h4 class="font-semibold text-lg mt-6 mb-2">Body Massage and Scrub</h4> <br>
+  <ul class="list-disc ml-6">
+    <li>90 mins - Rp. 220.000</li> <br>
+    <li>120 mins - Rp. 260.000</li> <br>
+  </ul>  <h4 class="font-semibold text-lg mt-6 mb-2">Aromatherapy Massage</h4> <br>
+  <ul class="list-disc ml-6">
+    <li>60 mins - Rp. 175.000</li> <br>
+    <li>90 mins - Rp. 220.000</li> <br>
+    <li>120 mins - Rp. 260.000</li> <br>
+  </ul>  <h4 class="font-semibold text-lg mt-6 mb-2">Thai Massage</h4> <br>
+  <ul class="list-disc ml-6">
+    <li>60 mins - Rp. 180.000</li> <br>
+    <li>90 mins - Rp. 220.000</li> <br>
+    <li>120 mins - Rp. 260.000</li> <br>
+  </ul>  <h4 class="font-semibold text-lg mt-6 mb-2">Warm Stone Massage</h4> <br>
+  <ul class="list-disc ml-6">
+    <li>60 mins - Rp. 220.000</li> <br>
+    <li>90 mins - Rp. 260.000</li> <br>
+  </ul>  <h4 class="font-semibold text-lg mt-6 mb-2">Shiatsu Massage</h4> <br>
+  <ul class="list-disc ml-6">
+    <li>60 mins - Rp. 200.000</li> <br>
+    <li>90 mins - Rp. 240.000</li> <br>
+  </ul>
+  <p>More Info and Pictures Below</p>
+</section>
+</section>
+  
+<section id="carapesan" style="background-color: #f4f9ee; padding: 40px; margin-top: 20px;">
+    <h2 style="font-size: 24px; color: #2c4a2b; text-align: center; margin-bottom: 30px;">Cara Pemesanan</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; font-size: 15px; color: #2c4a2b;">
+      <div style="flex: 1 1 200px; background: #fff; border-radius: 16px; padding: 20px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.08);">
+        <div style="font-size: 24px; margin-bottom: 10px;">📋</div>
+        <strong>1. Pilih layanan</strong>
+        <p style="margin-top: 8px;">Pilih layanan spa yang Anda inginkan dari daftar kami.</p>
+      </div>
+      <div style="flex: 1 1 200px; background: #fff; border-radius: 16px; padding: 20px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.08);">
+        <div style="font-size: 24px; margin-bottom: 10px;">💬</div>
+        <strong>2. Hubungi via WhatsApp</strong>
+        <p style="margin-top: 8px;">Kirim pesan ke kami untuk konfirmasi dan konsultasi.</p>
+        <a href="https://wa.me/6281237011393" style="display: inline-block; margin-top: 10px; padding: 10px 16px; background-color: #25D366; color: white; border-radius: 8px; text-decoration: none; font-weight: bold;">0812-3456-7890</a>
+      </div>
+      <div style="flex: 1 1 200px; background: #fff; border-radius: 16px; padding: 20px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.08);">
+        <div style="font-size: 24px; margin-bottom: 10px;">📅</div>
+        <strong>3. Tentukan jadwal</strong>
+        <p style="margin-top: 8px;">Atur tanggal dan waktu sesuai kenyamanan Anda.</p>
+      </div>
+      <div style="flex: 1 1 200px; background: #fff; border-radius: 16px; padding: 20px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.08);">
+        <div style="font-size: 24px; margin-bottom: 10px;">💆‍♀</div>
+        <strong>4. Nikmati layanan spa</strong>
+        <p style="margin-top: 8px;">Bersantailah dan biarkan kami memanjakan Anda.</p>
+      </div>
+    </div>
+  </section>
+  <section id="adress" class="address-section">
+  <div class="address-container">
+    <h3>📍 Alamat Kami</h3>
+    <p>Jl. Drupadi No.188-12, Seminyak, Kec. Kuta, Kabupaten Badung, Bali 80361</p>
+    <p><strong>Buka:</strong> Setiap hari, 09.00 – 21.00 WITA</p>
+  </div>
+</section>
+<section class="about-section" id="about">
+  <div class="about-container">
+    <h2>Tentang Elevate Spa</h2>
+    <p>
+      Terinspirasi dari keindahan alam Jepang, <strong>Sakura Spa</strong> adalah tempat peristirahatan yang menghadirkan harmoni, ketenangan, dan penyembuhan.
+    </p>
+  </div>
+</section>
+    <img src="spa.jpg" alt="">
+    <img src="wsp7.jpg" alt="">
+  </body>
+  </html>
